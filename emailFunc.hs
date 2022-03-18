@@ -1,3 +1,2 @@
-main = do:
-    print "This is messy!"
-    print "This is Acode"
+mailTo recipient = "Dear " ++ recipient ++ ",\n"
+messageContent body = "It is so nice to hear from you again!"
