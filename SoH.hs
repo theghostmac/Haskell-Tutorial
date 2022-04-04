@@ -7,7 +7,14 @@ n = 100
 o :: Integer -- whole numbers with no bounds on memory
 o = 10^30
 
+letter :: Char
+letter = 'a'
 
+interestRate :: Double
+interestRate = 3.26
+
+isFun :: Bool
+isFun = True
 
 -- TYPES 
 -- Lists
