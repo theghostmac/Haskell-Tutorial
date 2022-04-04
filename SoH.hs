@@ -63,8 +63,8 @@ half n = (fromIntegral n) / 2
 z :: Int
 z = read "6"
 
-read "10" :: Int
-read "25" :: Double
+-- read '10' :: Int
+-- read '25' :: Double
 
 
 -- curried functions
@@ -76,6 +76,11 @@ add' x y = x+y
 mult :: Int -> (Int -> (Int -> Int))
 mult x y z = x*y*z
 
+-- Curried Functions:
+makeAddress :: Int -> String -> String -> (Int, String, String)
+makeAddress number street town = (number, street, town)
+-- called like a Partial Differential Equation:
+(((makeAddress 123) "P.Stat Street") "Alabata Town")
 
 -- Polymorphic types
 -- a type that contains one or more type variables is called polymorphic
