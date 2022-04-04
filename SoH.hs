@@ -43,15 +43,20 @@ f = ("Yes", 'a', True) :: (String, Char, Bool)
 streetAddress :: (Int, String)
 streetAddress = (10, "Hilltop Hostel Str.")
 
-
 -- Function types
 -- function is a mapping from arguments of one type
 -- to results of another type
+-- functions have type signatures.
+
 add :: (Int, Int) -> Int
 add (x, y) = x+y
 -- the 0..n 
 zeroto :: Int -> [Int]
 zeroto n = [0..n]
+
+-- type conversion
+half :: Int -> Double
+half n = (fromIntegral n) / 2
 
 -- curried functions
 {- are functions that take their arguments one at a time 
