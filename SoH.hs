@@ -22,8 +22,18 @@ zeroto :: Int -> [Int]
 zeroto n = [0..n]
 
 -- curried functions
-add' :: Int -> (Int, Int)
+{- are functions that take their arguments one at a time 
+all functions in haskell are often curried functions.
+-}
+add' :: Int -> (Int -> Int)
 add' x y = x+y
+mult :: Int -> (Int -> (Int -> Int))
+mult x y z = x*y*z
+increment' 1 :: Int -> Int
+increment' 4
+
+-- Polymorphic types
+
 
 -- pure functions
 -- all haskell func are pure
