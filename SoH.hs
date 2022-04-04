@@ -54,9 +54,13 @@ add (x, y) = x+y
 zeroto :: Int -> [Int]
 zeroto n = [0..n]
 
--- type conversion
+-- TYPE CONVERSION
+-- integer conversion using fromIntegral
 half :: Int -> Double
 half n = (fromIntegral n) / 2
+-- string conversion using show and read
+
+
 
 -- curried functions
 {- are functions that take their arguments one at a time 
