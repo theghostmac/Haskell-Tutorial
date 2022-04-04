@@ -21,3 +21,9 @@ add (x, y) = x+y
 zeroto :: Int -> [Int]
 zeroto n = [0..n]
 
+-- curried functions
+add' :: Int -> (Int, Int)
+add' x y = x+y
+
+-- pure functions
+-- all haskell func are pure
