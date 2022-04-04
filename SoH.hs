@@ -59,7 +59,12 @@ zeroto n = [0..n]
 half :: Int -> Double
 half n = (fromIntegral n) / 2
 -- string conversion using show and read
+-- show converts to string, read converts from string
+z :: Int
+z = read "6"
 
+read "10" :: Int
+read "25" :: Double
 
 
 -- curried functions
