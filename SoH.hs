@@ -32,8 +32,16 @@ mult x y z = x*y*z
 increment' 1 :: Int -> Int
 increment' 4
 
--- Polymorphic types
 
+-- Polymorphic types
+-- a type that contains one or more type variables is called polymorphic
+-- as is expressions with such a type
+fst :: (a, b) -> a 
+head :: [a] -> a
+take :: Int -> [a] -> [a]
+id :: a -> a
+
+-- Overloaded types
 
 -- pure functions
 -- all haskell func are pure
