@@ -81,6 +81,8 @@ makeAddress :: Int -> String -> String -> (Int, String, String)
 makeAddress number street town = (number, street, town)
 -- called like a Partial Differential Equation:
 (((makeAddress 123) "P.Stat Street") "Alabata Town")
+-- you can call the desugar lambda version as a normal function
+makeAddress 150 "C.Data Street" "FUNAAB Area"
 
 -- Polymorphic types
 -- a type that contains one or more type variables is called polymorphic
