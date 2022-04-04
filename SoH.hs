@@ -1,6 +1,17 @@
+-- Data Type declaration
+-- t :: T means t has type T
+m :: String
+m = "James"
+n :: Int
+n = 100
+o :: Integer -- whole numbers with no bounds on memory
+o = 10^30
+
+
+
 -- TYPES 
 -- Lists
--- Lists can have variable length, elements of different types
+-- lists can have variable length, elements of different types
 -- multi-dimensions
 a = [1,2,3,4,5] :: [Int]
 b = [False, True, False, False] :: [Bool]
@@ -29,19 +40,20 @@ add' :: Int -> (Int -> Int)
 add' x y = x+y
 mult :: Int -> (Int -> (Int -> Int))
 mult x y z = x*y*z
-increment' 1 :: Int -> Int
-increment' 4
 
 
 -- Polymorphic types
 -- a type that contains one or more type variables is called polymorphic
 -- as is expressions with such a type
-fst :: (a, b) -> a 
-head :: [a] -> a
-take :: Int -> [a] -> [a]
-id :: a -> a
+-- fst :: (a, b) -> a 
+-- head :: [a] -> a
+-- take :: Int -> [a] -> [a]
+-- id :: a -> a
 
 -- Overloaded types
+-- overloaded type is possible with class constraints in the form C
+-- (+) :: Num a -> a -> a 
+
 
 -- pure functions
 -- all haskell func are pure
