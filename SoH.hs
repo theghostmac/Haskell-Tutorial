@@ -17,3 +17,7 @@ f = ("Yes", 'a', True) :: (String, Char, Bool)
 -- to results of another type
 add :: (Int, Int) -> Int
 add (x, y) = x+y
+-- the 0..n 
+zeroto :: Int -> [Int]
+zeroto n = [0..n]
+
