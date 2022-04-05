@@ -84,6 +84,9 @@ makeAddress number street town = (number, street, town)
 -- you can call the desugar lambda version as a normal function
 makeAddress 150 "C.Data Street" "FUNAAB Area"
 
+-- types for first-class functions
+
+
 -- Polymorphic types
 -- a type that contains one or more type variables is called polymorphic
 -- as is expressions with such a type
