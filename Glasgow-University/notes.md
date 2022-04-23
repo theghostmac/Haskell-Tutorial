@@ -42,15 +42,33 @@ Haskell types include:
 - Double
 - Bool
 
-## Data Structures
+### Strings
+Strings in Haskell are characters (Char). 
+str = "a,b,c,d,e" is actually
+str' = 'a' : 'b' : 'c' : 'd' : 'e' : []
+
+## Data Collection Structures
 Haskell Data Structures include:
 ### Lists
+Lists can have a diversity of types. Lists can be infinite in length. List type does not convey its length.
+
 For example:
 list_1 = ["A", "B", "C", true, 10]
+
 Lists are joined with ++
 list_2 = ["D", "E", false, 20]
 list = list_1 ++ list_2
 
+Appending to a list is done with :
+x = [1,2,3]
+y = 0 : x
+-- y = [0,1,2,3]
+The square bracket notation is shorthand for this:
+x' = 1 : (2 : (3 : []))
+This is called currying in Haskell.
+
 Multi-Dimensional Lists are thus:
 multiList :: [[Char]]
 multiList = [['a','b'], ['c','d','e']]
+
+### Tuples
