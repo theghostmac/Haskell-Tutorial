@@ -50,7 +50,7 @@ str' = 'a' : 'b' : 'c' : 'd' : 'e' : []
 ## Data Collection Structures
 Haskell Data Structures include:
 ### Lists
-Lists can have a diversity of types. Lists can be infinite in length. List type does not convey its length.
+Lists can not have a diversity of types. Lists can be infinite in length. List type does not convey its length.
 
 For example:
 list_1 = ["A", "B", "C", true, 10]
@@ -70,5 +70,13 @@ This is called currying in Haskell.
 Multi-Dimensional Lists are thus:
 multiList :: [[Char]]
 multiList = [['a','b'], ['c','d','e']]
+
+### List Functions
+head - fetches the first element
+head [1,2,3]
+tail - fetches every element except the first
+tail [1,2,3]
+head (tain [1,2,3]) -- returns 2
+
 
 ### Tuples
