@@ -1,7 +1,7 @@
 # Basic Elements by Example
 ## Expressions
 In all programming languages, you can create expressions like:
-(b*b - 4*a*c)/2*a
+((b*b) - (4*a*c)) / 2a
 You can also assign these expressions to variables:
 v = (b*b - 4*a*c)/2*a
 
@@ -44,8 +44,9 @@ Haskell types include:
 
 ### Strings
 Strings in Haskell are characters (Char). 
-str = "a,b,c,d,e" is actually
-str' = 'a' : 'b' : 'c' : 'd' : 'e' : []
+str = "a,b,c,d,e" 
+is actually:
+str' = 'a' : 'b' : 'c' : 'd' : 'e' : [ ]
 
 ## Data Collection Structures
 Haskell Data Structures include:
@@ -72,11 +73,29 @@ multiList :: [[Char]]
 multiList = [['a','b'], ['c','d','e']]
 
 ### List Functions
-head - fetches the first element
+```Haskell
+-- head - fetches the first element
 head [1,2,3]
-tail - fetches every element except the first
+-- tail - fetches every element except the first // removes the first from the list
 tail [1,2,3]
 head (tain [1,2,3]) -- returns 2
+null []
+-- True
+null [1,2,3]
+-- False
+take 3 [1,2,3,4,5]
+-- returns the first three: [1,2,3]
+drop 3 [1,2,3,4,5]
+-- returns the list without the first three: [4,5]
+length [1,2,3,4,5]
+--  returns5
+sum [1,2,3,4,5]
+-- returns 15
+product [1,2,3,4,5]
+-- returns 120
+reverse [1,2,3,4,5]
+-- returns [5,4,3,2,1]
 
+```
 
 ### Tuples
