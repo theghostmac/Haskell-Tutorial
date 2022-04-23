@@ -35,9 +35,22 @@ name = "John Doe"
 ```
 
 ## Types
-```Haskell
-x :: Int
-y :: String
-z :: Char
--- In lists
-```
+Haskell types include:
+- String
+- Int
+- Integer
+- Double
+- Bool
+
+## Data Structures
+Haskell Data Structures include:
+### Lists
+For example:
+list_1 = ["A", "B", "C", true, 10]
+Lists are joined with ++
+list_2 = ["D", "E", false, 20]
+list = list_1 ++ list_2
+
+Multi-Dimensional Lists are thus:
+multiList :: [[Char]]
+multiList = [['a','b'], ['c','d','e']]
