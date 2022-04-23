@@ -16,7 +16,7 @@ interestRate = 3.26
 isFun :: Bool
 isFun = True
 
--- TYPES 
+-- DATA STRUCTURES
 -- Lists
 -- lists can have variable length, elements of different types
 -- multi-dimensions

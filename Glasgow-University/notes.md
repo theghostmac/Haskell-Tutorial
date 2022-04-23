@@ -33,3 +33,11 @@ name :: String
 name = "John Doe"
 -- hello name
 ```
+
+## Types
+```Haskell
+x :: Int
+y :: String
+z :: Char
+-- In lists
+```
