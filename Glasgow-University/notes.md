@@ -29,4 +29,7 @@ def hello(name):
 In Haskell:
 ```Haskell
 hello name = "Hello, " ++ name
+name :: String
+name = "John Doe"
+-- hello name
 ```
