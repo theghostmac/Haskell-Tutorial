@@ -115,6 +115,16 @@ There are no restrictions to the type diversity of the elements and that include
 ```Haskell
 ('a', (False, 'b')) :: (Char : (Bool : Char))
 ```
+Tuples must have a finite arity.
+
+# Function Types
+A function is a mapping from arguments of one type to results of another type.
+```Haskell
+not :: Bool -> Bool
+-- or
+even :: Int -> Bool
+```
+
 
 
 ## Built-in Functions
