@@ -11,6 +11,11 @@
 
 -- Q: write a function printDouble that takes an Int and returns the 
 -- value doubled as a string.
-printDouble :: Int -> String
-printDouble a = show (a*2)
+-- printDouble :: Int -> String
+-- printDouble a = show (a*2)
 
+-- double ever number in a list
+double nums =
+    if null nums
+        then []
+    else (2*(head nums) : ( double (tail nums)))
